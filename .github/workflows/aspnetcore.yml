@@ -22,3 +22,10 @@ jobs:
         dotnet publish -c Release -o CoreWebApplication 
     - name: List Directory
       run: ls -al
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        name: published_webapp
+        path: bin\Release\Publish
+    - name: List Directory
+      run: ls -al
