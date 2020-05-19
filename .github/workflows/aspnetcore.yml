@@ -20,3 +20,5 @@ jobs:
     - name: Publish with dotnet
       run: |
         dotnet publish -c Release -o CoreWebApplication 
+    - name: List Directory
+      run: ls -al
