@@ -17,3 +17,6 @@ jobs:
       run: dotnet build --configuration Release
     - name: List Directory
       run: ls -al
+    - name: Publish with dotnet
+      run: |
+        dotnet publish -c Release -o CoreWebApplication 
